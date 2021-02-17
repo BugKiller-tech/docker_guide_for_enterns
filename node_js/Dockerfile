@@ -1,4 +1,5 @@
-FROM node:latest
+# FROM node:latest
+FROM node:alpine
 WORKDIR /app
 ADD package*.json ./
 RUN npm install
