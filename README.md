@@ -61,8 +61,26 @@ You can open bash of docker. actually docker exec will run the program inside th
 kubernate is one of the most popular container orchestration system for docker containers.
 
 
+## Master
+API server: entrypoint to K8S cluster  
+Controller manager: keeps  track of whats happening in the cluster
+Scheduler: ensures Pods placement  
+etcd: Kubernetes backing key-value store
+
+## Worker
+kublet will be running on it and few containers
 
 
+
+## Pod, Conatiner, Service (internal, external), Ingress  
+## ConfigMap
+Don't put credentials into ConfigMap
+
+## Secret
+You can store the secret data like credentials here. (base64 encoded)  
+(! The built-in security mechanism is not enabled by default.)
+
+## Volumns
 
 
 
