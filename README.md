@@ -83,6 +83,40 @@ You can store the secret data like credentials here. (base64 encoded)
 ## Volumns
 
 
+## Deploying Statefulset
+
+## COMPONENTS SUMMARY
+
+## Minikube and kubectl
+
+### Minikube
+To test the production cluster setup on localhost
+- creates virtual box on your laptop  
+- Node runs in that virtual box  
+- 1 node K8s cluster  
+- for testing purposes
+
+### kubectl
+command line tool to use to interact with any type of cluster
+
+### Installing Minikube
+
+
+```
+brew upate
+brew install hyperkit
+brew install minikube
+```
+> minikube will install kubectl as a dependencies  
+> minikube has docker runtime or docker deamon inside it.  
+> If you installed docker for desktop, you will already have hyperkit.
+
+
+> we will create called 'deployment' when we need 'pod' becuase in kubernates we will not work with 'pod' direclty. 'deployment' is the absctraction of 'pdf' and it will have 'pod' in it.
+> 
+
+
+
 
 
 
