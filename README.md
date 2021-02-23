@@ -113,10 +113,45 @@ brew install minikube
 
 
 > we will create called 'deployment' when we need 'pod' becuase in kubernates we will not work with 'pod' direclty. 'deployment' is the absctraction of 'pdf' and it will have 'pod' in it.
-> 
+
+```shell
+ minikube start --vm-driver=docker
+ kubectl create deployment [name here] --image=nginx
+ kubectl get deployment
+ kubectl get pod
+ ```
+## debugging
+```
+kubectl logs [pod name]
+kubectl describe pod [pod name] 
+kubectl exec -it [pod name] -- bin/bash # -it means interactive terminal
+
+```
+
+## apply
+
+```
+kubectl apply -f [yaml file name]
+kubectl delete -f [yaml file name]
+```
+
+## kubectl command summary
 
 
 
+## Train (mongo & mongo-express)
+
+see the folder train_kubernates
+
+```
+cd train_kubernates
+kubectl apply -f mongo-configmap.yaml
+kubectl apply -f mongodb-secret.yaml
+kubectl apply -f mongo.yaml
+kubectl apply -f mongo-express.yaml
+
+minikube service mongo-express-service
+```
 
 
 
